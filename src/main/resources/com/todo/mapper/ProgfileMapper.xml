@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.todo.mapper.ProfileMapper">
+
+	<select id="getList" resultType="ProfileVO">
+
+		select nickname, user_id,
+		profile_image_url from user
+
+
+	</select>
+
+
+	<select id="getListWithPaging" resultType="BoardVO">
+
+		select nickname, user_id,
+		profile_image_url from user
+		<where>
+			<include refid="criteria"></include>
+		</where>
+		limit #{offset} , #{amount}
+
+	</select>
+
+
+</mapper>
