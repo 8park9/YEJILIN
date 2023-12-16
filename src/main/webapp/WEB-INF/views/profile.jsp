@@ -25,7 +25,7 @@
 	</div>
 	
 	<div>
-	<a href="#">설정<i class="fa-solid fa-gear"></i></a>
+	<a href="#">설정</a>
 	</div>
 </div>
 <%-- <%@ include file="../layouts/footer.jsp" %> --%>

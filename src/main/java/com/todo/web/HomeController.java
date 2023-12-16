@@ -1,4 +1,4 @@
-package com.todo.controller;
+package com.todo.web;
 
 import java.text.DateFormat;
 import java.util.Date;
